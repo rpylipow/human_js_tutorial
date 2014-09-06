@@ -12,6 +12,11 @@ module.exports = View.extend({
       type: 'attribute',
       name: 'href',
       role: 'action-view-user'
+    },
+    'model.editUrl': {
+      type: 'attribute',
+      name: 'href',
+      role: 'action-edit-user'
     }
   },
   events: {

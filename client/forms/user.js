@@ -10,6 +10,7 @@ module.exports = FormView.extend({
         placeholder: 'Ryan',
         parent: this,
         required: true,
+        value: this.model && this.model.givenName,
         tests: [
           function (val) {
             if (val.length < 4) return 'Must be more than 3 characters.';
@@ -22,6 +23,7 @@ module.exports = FormView.extend({
         placeholder: 'Pylipow',
         parent: this,
         required: true,
+        value: this.model && this.model.familyName,
         tests: [
           function (val) {
             if (val.length < 4) return 'Must be more than 3 characters.';

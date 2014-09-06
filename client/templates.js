@@ -22,7 +22,7 @@
 
     // includes/user.jade compiled template
     templatizer["includes"]["user"] = function tmpl_includes_user() {
-        return '<li><a role="user-name"></a><button role="action-delete-user" class="btn btn-default">Delete</button><a role="action-view-user" class="btn btn-default">View</a></li>';
+        return '<li><a role="user-name"></a><button role="action-delete-user" class="btn btn-default">Delete</button><a role="action-view-user" class="btn btn-default">View</a><a role="action-edit-user" class="btn btn-default">Edit</a></li>';
     };
 
     // pages/home.jade compiled template
@@ -33,6 +33,11 @@
     // pages/userCreate.jade compiled template
     templatizer["pages"]["userCreate"] = function tmpl_pages_userCreate() {
         return '<section class="page create-user"><h1>Create a new user</h1><form role="user-form"><fieldset role="field-container"></fieldset><button type="submit" class="btn btn-primary">Create User</button></form></section>';
+    };
+
+    // pages/userEdit.jade compiled template
+    templatizer["pages"]["userEdit"] = function tmpl_pages_userEdit() {
+        return '<section class="page edit-user"><h1>Edit user</h1><form role="user-form"><fieldset role="field-container"></fieldset><button type="submit" class="btn btn-primary">Save Changes</button></form></section>';
     };
 
     // pages/userView.jade compiled template
